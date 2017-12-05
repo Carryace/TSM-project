@@ -1,0 +1,66 @@
+.header-navbar{
+
+  background-color: #00d1b2;
+
+  .header-logo{
+    width: 40px;
+    height: 40px;
+    margin: 6px 0px 10px 10px;
+  }
+
+  .header-input-div{
+    display: inline-block;
+    background-color: white;
+    margin: 13px 5px 15px 30px;
+    border-radius: 7px;
+
+  }
+
+  .header-input{
+    height: 30px;
+    min-width: 220px;
+    background-color: rgba(0, 209, 178, 0.5);
+    color: white;
+    font-size: 110%;
+    border: 1px solid rgba(0, 209, 178, 0.5);
+  }
+  
+  ::placeholder{
+    color: white;
+  }
+
+  .avatar-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px white solid;
+    margin: 3px 5px 0px 10px;
+  }
+
+  .button{
+    margin: 10px 2px 10px 2px;
+  }
+
+  .column{
+    height: 70px;
+  }
+
+  .header-logo-text{
+    display: inline-block;
+    padding-top: 12px;
+    font-size: 120%;
+    color: white;
+  }
+
+  .header-user-text{
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 75%;
+    color: white;
+  }
+
+  .header-logo-div{
+    display: inline-block;
+  }
+}
+
