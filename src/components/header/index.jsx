@@ -6,7 +6,7 @@ import './style.scss';
 class Header extends React.Component {
     render() {
         return (
-            <div className={"header-navbar container is-primary"}>
+            <div className={"header-navbar container is-fullhd is-primary"}>
                 <div className={"columns"}>
                     <div className={"column is-three-quarters"}>
                         <img src={logo} alt={"logo"} className={"header-logo pull-left"}/>
