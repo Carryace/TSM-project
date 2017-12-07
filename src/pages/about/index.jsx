@@ -1,11 +1,14 @@
 import React from 'react';
+import DocumentTitle from 'react-document-title';
 
 class AboutPage extends React.Component {
     render() {
         return (
-            <div>
-                About
-            </div>
+            <DocumentTitle title={"NSTS | About"}>
+                <div>
+                    About
+                </div>
+            </DocumentTitle>
         )
     }
 }
