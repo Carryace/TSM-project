@@ -36,9 +36,18 @@ class HomePage extends Component {
 
     topicsContent = [
         {
-            title:'Test Lipsum Title',
+            createdTime: '2017-12-16',
+            title:'Step by Step SEO for international website',
             label:['Angular'],
-            abstract:'Test Abstract description Lipsum Test Abstract description LipsumTest Abstract description Lipsum Test Abstract description Lipsum Test Abstract description Lipsum'
+            abstract:'Test Abstract description Lipsum Test Abstract description LipsumTest Abstract description Lipsum Test Abstract description Lipsum Test Abstract description Lipsum',
+            author: 'Nathan'
+        },
+        {
+            createdTime: '2017-12-16',
+            title:'Step by Step SEO for international website',
+            label:['Angular'],
+            abstract:'Test Abstract description Lipsum Test Abstract description LipsumTest Abstract description Lipsum Test Abstract description Lipsum Test Abstract description Lipsum',
+            author: 'Nathan'
         }
     ];
     
@@ -50,8 +59,8 @@ class HomePage extends Component {
                         <div className={"column is-one-quarter"}>
                             <SideNav sidenavData={this.sidenavContent}></SideNav>
                         </div>
-                        <div className={"column"}>
-                            { this.renderTopicContents()}
+                        <div className={"column is-three-quarters"}>
+                            {this.renderTopicContents()}
                         </div>
                     </div>
 
@@ -62,11 +71,23 @@ class HomePage extends Component {
 
     renderTopicContents(){
         return (
-            <div className={"container"}>
-                {this.topicsContent.map( item => { return
-                        <h2 className={"h2"}>{item.title}</h2>
-                    ;})}
-            </div>);
+            <section className={"hero"}>
+                {this.topicsContent.map(item => {
+                    return (
+                        <div className={"hero-body"} key={item.title}>
+                            <div><span className={"update-time-span"}>Posted by {item.author} on {item.createdTime}</span></div>
+                            <h1 className={"h1 topic-title"}>{item.title}</h1>
+                            <div>
+                                <a className={"button is-info is-outlined"}>Read More &nbsp; <i className={"fa fa-angle-double-right"}></i></a>
+                            </div>
+                            <p className={"topic-description"}>
+                                {item.abstract}
+                            </p>
+                        </div>
+                    );
+                })}
+            </section>
+        );
     }
 
 

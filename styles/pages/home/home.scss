@@ -2,6 +2,26 @@
   margin-top: 15px;
   margin-bottom: 15px;
   min-height: 80vh;
+  $silver: #C0C0C0;
 
+  .topic-title{
+    padding: 10px 0px;
+    font-family: fantasy;
+  }
+
+  .topic-description{
+    display: block;
+    padding-top: 15px;
+    font-family: serif;
+  }
+
+  .update-time-span{
+    font-size: 80%;
+    color: $silver;
+  }
+
+  .hero-body{
+    padding-top: 1.75rem;
+  }
 
 }
