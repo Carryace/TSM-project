@@ -4,5 +4,14 @@
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
 @import '~bulma/bulma.sass';
+@import '~bulma/sass/utilities/initial-variables.sass';
 
+// Load all components
+@import './components/components_all.scss';
+
+// Load all common styles
+@import './common/common_all';
+
+// Load all pages
+@import './pages/pages_all';
 
