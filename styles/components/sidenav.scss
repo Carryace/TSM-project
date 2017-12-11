@@ -31,27 +31,26 @@
     }
   }
 
-
-  .is-ts-ul-section{  }
-
-  .is-reports-ul-section{
-    border: 2px $report solid;
+  @mixin ul-section-with-color($color) {
+    border: 2px $color solid;
     p{
-      background-color: $report;
+      background-color: $color;
     }
     .is-active{
-      background-color: $report;
+      background-color: $color;
     }
   }
 
+  .is-ts-ul-section{
+    @include ul-section-with-color($primary);
+  }
+
+  .is-reports-ul-section{
+    @include ul-section-with-color($report);
+  }
+
   .is-topics-ul-section{
-    border: 2px $info solid;
-    p{
-      background-color: $info;
-    }
-    .is-active{
-      background-color: $info;
-    }
+    @include ul-section-with-color($info);
   }
 
   .is-link-section{
