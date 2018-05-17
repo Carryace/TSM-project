@@ -11,7 +11,8 @@ class HomePage extends Component {
             subLinks: [
                 {name: 'Add Timesheet', link : '/'},
                 {name: 'Active Timesheets', link : '/'},
-                {name: 'Completed Timesheets', link : '/'}
+                {name: 'Completed Timesheets', link : '/'},
+                {name: 'Daily Log', link: '/daily-log'},
             ]
         },
         {
