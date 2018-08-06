@@ -3,6 +3,7 @@
 
   max-width: 400px;
   min-height: 75vh;
+  height: 100%;
   padding-right: 15px;
   border-right: 5px solid $light;
 
@@ -29,6 +30,15 @@
       background-color: $primary;
       color: white;
     }
+  }
+
+  input {
+    width: 93%;
+    min-width: 150px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid $primary;
+    line-height: 25px;
   }
 
   @mixin ul-section-with-color($color) {

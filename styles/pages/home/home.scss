@@ -6,7 +6,7 @@
 
   .topic-title{
     padding: 10px 0px;
-    font-family: fantasy;
+    // font-family: fantasy;
   }
 
   .topic-description{
@@ -24,4 +24,69 @@
     padding-top: 1.75rem;
   }
 
+  .home-content {
+    padding-right: 40px;
+  }
+
+  .hot-paper-section {
+    position: relative;
+    margin-bottom: 30px;
+    
+    .hot-paper-list {
+      margin-top: 15px;
+      margin-bottom: 25px;
+
+      .hot-paper-item {
+        border-radius: 10px;
+        border: 2px $grey-lighter solid;
+        margin-right: 8px;
+
+        .hot-paper-title {
+          font-weight: 600;
+        }
+
+        .item-time-author {
+          line-height: 20px;
+          font-size: 80%;
+          color: $grey;
+        }
+
+        .paper-keyword-div {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .hot-paper-item:hover {
+      cursor: pointer;
+      border-color: $blue;
+    }
+
+    .hot-paper-tags-div {
+      padding-left: 15px;
+    }
+
+    .config-link {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  .user-workspace-section {
+
+    .user-workspace-content {
+      margin-top: 20px;
+    }
+
+    .inline-citation-div:hover {
+      cursor: pointer;
+      background-color: $grey-lighter;
+    }
+
+    .active-citation-div {
+      color: white;
+      background-color: $blue;
+    }
+  }
 }

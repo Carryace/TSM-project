@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import App from './app'
 import { Router, Route, hashHistory } from 'react-router';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import reducers from './states/reducers';
+
+
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
-  (<AppContainer>
-      <App/>
-  </AppContainer>),
+  (<Provider store={createStoreWithMiddleware(reducers)}>
+  <App />
+</Provider>),
   document.getElementById('app')
 );
 

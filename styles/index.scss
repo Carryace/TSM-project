@@ -1,8 +1,13 @@
 @import 'main';
 @import 'common/button';
 
-$fa-font-path: "~font-awesome/fonts";
-@import "~font-awesome/scss/font-awesome.scss";
+// @import "~@fontAwesome/fontawesome-free/scss/fontawesome.scss";
+// $fa-font-path: "~@fontAwesome/fontawesome-free/webfonts/" !default;
+
+// Font awesome 4
+$fa-font-path: '~font-awesome/fonts';
+@import '~font-awesome/scss/font-awesome.scss';
+
 @import '~bulma/bulma.sass';
 @import '~bulma/sass/utilities/initial-variables.sass';
 
@@ -14,4 +19,3 @@ $fa-font-path: "~font-awesome/fonts";
 
 // Load all pages
 @import './pages/pages_all';
-

@@ -1,0 +1,20 @@
+.daily-log-page {
+  
+  .daily-cbx-div {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-family: fantasy;
+  }
+
+  .daily-cbx-item {
+    color: $info;
+    border-radius: 10px;
+    border: 1px solid $info;
+    line-height:40px;
+    margin: 0px 10px;
+    font-size: 120%;
+    text-align: center;
+  }
+}

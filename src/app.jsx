@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/index.scss';
-import HomePage from './pages/home/index.jsx';
-import AboutPage from './pages/about/index.jsx';
-import DailyLogPage from './pages/daily-log/index.jsx';
+import HomePage from './pages/home';
+import AboutPage from './pages/about';
+import DailyLogPage from './pages/daily-log';
 import Header from './components/header';
 import Footer from './components/footer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
