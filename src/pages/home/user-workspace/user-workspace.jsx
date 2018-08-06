@@ -7,7 +7,7 @@ class UserWorkspace extends Component {
     return (
       <section className={'user-workspace-section'}>
         <h1 className="h1 topic-title">My Workspace</h1>
-        <div className="columns">
+        <div className="columns user-workspace-content">
           <nav className="panel column is-two-thirds">
             <p className="panel-heading">
               Edited Recent
