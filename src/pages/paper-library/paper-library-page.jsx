@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DocumentTitle from 'react-document-title';
 import SideNav from '../../components/sidenav/sidenav'; 
+import PaperFilter from './paper-filter';
 
 class PaperLibraryPage extends Component {
   render() {
@@ -12,7 +13,8 @@ class PaperLibraryPage extends Component {
               <SideNav/>
             </div>
             <div className={'column is-three-quarters'}>
-              <h1 className="h1">My Paper Library</h1>
+              <h1 className="h1 mb-2">My Paper Library</h1>
+              <PaperFilter/>
               <table className="table is-striped is-hoverable is-fullwidth">
                 <thead>
                   <tr>
@@ -24,7 +26,7 @@ class PaperLibraryPage extends Component {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr onClick={()=>this.onRowClick()}>
                     <td>Title for paper TTTTTTTTTTT TTTTTTTTTTT TTTT TTTT TTTT TTTTT TTTTT TTTTT TTTT</td>
                     <td>Nathan Sun, Tony D.Sh</td>
                     <td>2018</td>
@@ -45,6 +47,10 @@ class PaperLibraryPage extends Component {
         </div>
       </DocumentTitle>
     );
+  }
+
+  onRowClick() {
+    this.props.history.push('/paper/123');
   }
 }
 

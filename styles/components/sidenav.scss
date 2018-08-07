@@ -7,6 +7,18 @@
   padding-right: 15px;
   border-right: 5px solid $light;
 
+  .is-home-section{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 110%;
+    font-weight: bold;
+    line-height: 18px;
+    background-color: $primary;
+    a {
+      color: white;
+    }
+  }
+
   .is-ul-section{
     margin-top: 5px;
     margin-bottom: 15px;
@@ -61,6 +73,10 @@
 
   .is-project-ul-section{
     @include ul-section-with-color($info);
+  }
+
+  .is-paper-ul-section{
+    @include ul-section-with-color($report);
   }
 
   .is-link-section{

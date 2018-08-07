@@ -1,6 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SideNav extends React.Component {
+
+  projectLinks = [
+    {label: 'Recent Project', url:'/'}, 
+    {label: 'Projects list', url:'/'}, 
+    {label: 'Create New Project', url:'/'}
+  ];
+
+  libraryLinks = [
+    {label: 'Recent Edited Paper', url:'/'}, 
+    {label: 'Paper Library', url:'/papers'}, 
+    {label: 'Import Paper and Reference', url:'/'}  
+  ];
+
+  homeLinks = [
+    {label: 'Home', url:'/'}, 
+    {label: 'My Profile', url:'/papers'}, 
+    {label: 'Settings', url:'/'}  
+  ]
+
   constructor(props, context) {
     super(props, context);
   }
@@ -8,13 +28,23 @@ class SideNav extends React.Component {
   render() {
     return (
       <aside className={'sidenav'}>
+
         <ul className={'is-ul-section menu-list'}>
+          <p className={'is-link-section menu-label'}>
+            <a>
+              <i className="fa fa-home" />&nbsp;My Space
+            </a>
+          </p>
+          {this.renderSubLinks(this.homeLinks)}
+        </ul>
+
+        <ul className={'is-ul-section menu-list is-paper-ul-section'}>
           <p className={'is-link-section menu-label'}>
             <a>
               <i className="fa fa-database" />&nbsp;My Library
             </a>
           </p>
-          {this.renderSubLinks(['Recent Edited Papers', 'Paper Library', 'Import Paper and Reference'])}
+          {this.renderSubLinks(this.libraryLinks)}
         </ul>
 
           
@@ -24,19 +54,19 @@ class SideNav extends React.Component {
               <i className="fa fa-folder-open" />&nbsp;My Projects
             </a>
           </p>
-          {this.renderSubLinks(['Recent Project', 'Projects list', 'Create New Project'])}
+          {this.renderSubLinks(this.projectLinks)}
         </ul>
       </aside>
     );
   }
 
-  renderSubLinks(linkNames) {
+  renderSubLinks(links) {
     return (
       <ul className={'menu-list'}>
-        {linkNames.map(link => {
+        {links.map(link => {
           return (
-            <li key={link}>
-              <a>{link}</a>
+            <li key={link.label}>
+              <Link to={link.url}>{link.label}</Link>
             </li>
           );
         })}
