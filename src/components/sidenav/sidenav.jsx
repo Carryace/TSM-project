@@ -14,13 +14,17 @@ class SideNav extends React.Component {
               <i className="fa fa-database" />&nbsp;My Library
             </a>
           </p>
-          {this.renderSubLinks(['My Papers', 'Import Reference'])}
-          <ul className={'menu-list'}>
-            <li>
-              <input placeholder="Search Paper/Reference"/>
-            </li>
-          </ul>
+          {this.renderSubLinks(['Recent Edited Papers', 'Paper Library', 'Import Paper and Reference'])}
+        </ul>
+
           
+        <ul className={'is-ul-section menu-list is-project-ul-section'}>
+          <p className={'is-link-section menu-label'}>
+            <a>
+              <i className="fa fa-folder-open" />&nbsp;My Projects
+            </a>
+          </p>
+          {this.renderSubLinks(['Recent Project', 'Projects list', 'Create New Project'])}
         </ul>
       </aside>
     );

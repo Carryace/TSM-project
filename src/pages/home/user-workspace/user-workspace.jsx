@@ -23,14 +23,17 @@ class UserWorkspace extends Component {
             <p className="panel-heading">
               Selected Paper Detail
             </p>
+            <div className={'panel-block paper-title-block'}>
+              Display Paper Title Here
+            </div>
             <div className="panel-block">
               <table className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                <thead>
+                {/* <thead>
                   <tr>
                     <th>Description</th>
                     <th>Value</th>
                   </tr> 
-                </thead>
+                </thead> */}
                 <tbody>
                   <tr>
                     <td>Author</td>

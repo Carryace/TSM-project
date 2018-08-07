@@ -1,2 +1,9 @@
 @import './home/home';
 @import './daily-log/daily-log';
+@import './edit-paper/index';
+
+.page-margin {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height: 80vh;
+}

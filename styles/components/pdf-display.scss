@@ -1,0 +1,8 @@
+.pdf {
+  margin-bottom: 20px;
+  .pdf-object {
+    width: 100%;
+    min-height: 600px;
+    border: 2px solid $grey-lighter;
+  }
+}
