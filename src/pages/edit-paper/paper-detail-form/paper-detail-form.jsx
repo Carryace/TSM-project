@@ -25,6 +25,20 @@ class PaperDetailForm extends Component {
           </div>
         </div>
 
+        <div className="field">
+          <label className="label">Publisher</label>
+          <div className="control">
+            <input className="input" type="text" placeholder="Keyword"/>
+          </div>
+        </div>
+
+        <div className="field">
+          <label className="label">Address</label>
+          <div className="control">
+            <input className="input" type="text" placeholder="Keyword"/>
+          </div>
+        </div>
+
         <div className="field is-grouped">
           <div className="control">
             <button className="button is-info is-focused">Apply</button>

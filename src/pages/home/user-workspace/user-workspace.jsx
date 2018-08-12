@@ -28,19 +28,21 @@ class UserWorkspace extends Component {
             </div>
             <div className="panel-block">
               <table className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                {/* <thead>
-                  <tr>
-                    <th>Description</th>
-                    <th>Value</th>
-                  </tr> 
-                </thead> */}
                 <tbody>
                   <tr>
                     <td>Author</td>
                     <td>Nathan Sun</td>
                   </tr>
                   <tr>
-                    <td>Author</td>
+                    <td>Publisher</td>
+                    <td>Nathan Sun</td>
+                  </tr>
+                  <tr>
+                    <td>Year</td>
+                    <td>Nathan Sun</td>
+                  </tr>
+                  <tr>
+                    <td>Series</td>
                     <td>Nathan Sun</td>
                   </tr>
                 </tbody>

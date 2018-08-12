@@ -55,11 +55,11 @@
 
   @mixin ul-section-with-color($color) {
     border: 2px $color solid;
-    p{
+    p, .is-link-section a:hover, .is-active{
       background-color: $color;
     }
-    .is-active{
-      background-color: $color;
+    .is-active {
+      color: white;
     }
   }
 
