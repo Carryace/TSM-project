@@ -17,11 +17,11 @@ class EditPaperPage extends Component {
             <div className={'column is-three-quarters paper-detail-div'}>
               <div className="block level">
                 <div className="level-left">
-                  <h1 className="level-item h1">Edit or View Paper Detail </h1>
+                  <h1 className="level-item h1">Edit/View Paper Detail </h1>
                 </div>
                 <div className="level-right">
                   <a className="button is-primary is-pulled-right mr-1"><i className="fa fa-sign-out"></i>&nbsp; Export</a>
-                  <a className="button is-primary is-pulled-right"><i className="fa fa-link"></i>&nbsp; Link</a>
+                  <a className="button is-primary is-pulled-right"><i className="fa fa-link"></i>&nbsp; Link Project</a>
                 </div>
                 </div>
               <div className={'columns'}>
